@@ -1,0 +1,21 @@
+To compile source code :
+
+   cd build
+   cmake ../src
+   make
+
+Usage :
+
+   ppam-mpi cluster ifilename nbSeriesInChunk nbClusters randomize p_for_dissims
+
+Where :
+   ifilename = path to serialized dataset (read below)
+   nbSeriesInChunk = number of time-series to process sequentially
+   nbClusters = number of clusters
+   randomize = 1 to dispatch time-series at random. 0 to process them in order
+   p_for_dissims = the 'p' of L_p distance used to compute dissimilarities
+
+Note : custom [de]serialization. Consider writing your own 
+in src/TimeSeries/ folder if you plan to test the package.
+
+See also src/main.c for the details.

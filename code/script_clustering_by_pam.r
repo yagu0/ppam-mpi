@@ -1,3 +1,6 @@
+# Original R script (not required by the C program)
+
+
 ##################################################################
 ## File: script_clustering_by_pam.r
 ##
