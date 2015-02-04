@@ -1,0 +1,7 @@
+#shared between library/exec and tests
+set(CMAKE_C_FLAGS "-std=gnu99")
+set(CMAKE_C_FLAGS_DEBUG "-g3")
+set(CMAKE_C_FLAGS_RELEASE "-O3")
+
+#already by default... ?!
+include_directories("${CMAKE_SOURCE_DIR}")

@@ -1,0 +1,133 @@
+\documentclass[xcolor=dvipsnames,pdftex,12pt]{beamer}
+
+\usepackage{hyperref}
+\usepackage{colortbl}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{bbold,dsfont}
+\usepackage{theorem}
+\usepackage{wrapfig}
+\usepackage{graphics}
+\usepackage{xcolor}
+%\usepackage{times}
+\usepackage{bm}
+\usepackage{stmaryrd}
+\usepackage{dashundergaps}
+
+\graphicspath{ {./pics/} }
+
+\definecolor{vert}{RGB}{0,139,0}
+\definecolor{violet}{RGB}{74,0,255}%{102,0,204}
+\definecolor{gris}{RGB}{100,100,100}
+\definecolor{ebgreen}{RGB}{230,243,230}
+\newcommand{\blue}{\textcolor{blue}}
+\newcommand{\red}{\textcolor{red}}
+\newcommand{\green}{\textcolor{vert}}
+\newcommand{\violet}{\textcolor{violet}}
+
+\hypersetup{
+	colorlinks,
+	linkcolor=black,
+	urlcolor=violet,
+%	hrefcolor=violet
+}
+
+\usepackage{listings}
+
+%\usepackage{minted}
+% \begin{minted}{c}
+% int main() {
+% printf("hello, world");
+% return 0;
+% }
+% \end{minted}
+
+\usepackage{textcomp}
+%\usepackage{bera}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{
+	backgroundcolor=\color{lbcolor},
+	tabsize=4,
+	rulecolor=,
+	language=SQL,
+	basicstyle=\scriptsize,
+	upquote=true,
+	%aboveskip={1.5\baselineskip},
+	columns=fixed,
+	showstringspaces=false,
+	extendedchars=true,
+	breaklines=true,
+	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+	frame=single,
+	showtabs=false,
+	showspaces=false,
+	showstringspaces=false,
+	identifierstyle=\ttfamily,
+	keywordstyle=\color[rgb]{0,0,1},
+	commentstyle=\color[rgb]{0.133,0.545,0.133},
+	stringstyle=\color[rgb]{0.627,0.126,0.941},
+	escapeinside=""
+}
+
+\newcommand{\cC}{{\cal C}}
+\newcommand{\cF}{{\cal F}}
+\newcommand{\cH}{{\cal H}}
+\newcommand{\cM}{{\cal M}}
+\newcommand{\cO}{{\cal O}}
+\newcommand{\cP}{{\cal P}}
+\newcommand{\cU}{{\cal U}}
+\newcommand{\cV}{{\cal V}}
+\newcommand{\cS}{{\cal S}}
+\newcommand{\cX}{{\cal X}}
+\newcommand{\cY}{{\cal Y}}
+\newcommand{\cZ}{{\cal Z}}
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\M}{\mathbb{M}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Prob}{\mathbb{P}}
+\newcommand{\esp}{\thinspace}
+\newcommand{\1}{\mathbb{1}}
+\newcommand{\puiss}{e\thinspace \mbox{\small -}}
+\newcommand{\tr}{{}^t \negthinspace}
+
+\usetheme{Boadilla}%{Frankfurt}{Madrid}
+\setbeamertemplate{navigation symbols}{}
+
+%~ \setbeamercolor{section in head/foot}{fg=white, bg=black}
+%~ 
+%~ \makeatletter
+%~ \setbeamertemplate{footline}
+%~ {
+  %~ \leavevmode%
+  %~ \hbox{%
+  %~ \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
+    %~ \usebeamerfont{author in head/foot}\insertshortauthor~~\beamer@ifempty{\insertshortinstitute}{}{(\insertshortinstitute)}
+  %~ \end{beamercolorbox}%
+  %~ \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
+    %~ \usebeamerfont{title in head/foot}\insertshorttitle
+  %~ \end{beamercolorbox}%
+  %~ \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
+    %~ \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    %~ \insertframenumber{} / \inserttotalframenumber\hspace*{2ex} 
+  %~ \end{beamercolorbox}}%
+  %~ \vskip0pt%
+%~ }
+%~ \makeatother
+
+\AtBeginSection[]{
+\begin{frame}
+	\tableofcontents[currentsection]
+\end{frame}
+}
+
+\AtBeginSubsection[]{
+\begin{frame}<beamer>
+	\tableofcontents[currentsubsection]
+\end{frame}
+}

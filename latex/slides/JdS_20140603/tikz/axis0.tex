@@ -1,0 +1,18 @@
+  \begin{tikzpicture}[scale=0.5, domain = 0:4]
+ 
+     % Axis
+     \draw[<->, thick] (0,4) node (yaxis) [left] {$X_t$} 
+        |- (11,0) node (xaxis) [right] {$t$} ;
+
+     \draw[dashed, color=PineGreen] (1.5*6 cm, 4) -- (1.5*6 cm, -3pt) 
+                         node[anchor=north] {$T $};
+
+     \draw[dashed, color=PineGreen] (1.5*7,4) -- (1.5*7,-3pt) 
+                         node[below] {$T+\delta$};
+
+     \draw[color=PineGreen] plot[only marks, mark = *] file {tikz/data0.dat};
+
+     \draw (0,0) -- (0,-3pt) node[below, color= PineGreen] {0};
+     
+    
+  \end{tikzpicture} 

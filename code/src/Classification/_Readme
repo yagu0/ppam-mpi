@@ -1,0 +1,2 @@
+The output of a k-style clustering can easily be used for supervised classification:
+we assign any new observation to the closest cluster representative ("center").
