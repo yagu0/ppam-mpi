@@ -1,2 +1,9 @@
 /code/build/*
 /code/data/src/
+
+*.aux
+*.log
+*.nav
+*.snm
+*.toc
+*.out
