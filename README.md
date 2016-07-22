@@ -10,7 +10,7 @@ The computed medoids are then merged iteratively, until we get a final set of k 
 ---
 
 The folder "communication/" contains latex sources (and generated pdf files) of a short paper submitted 
-to the Journées de Statistique in Rennes, France (2014), and also the slides presented at this event.
+to the Journ&eacute;es de Statistique in Rennes, France (2014), and also the slides presented at this event.
 
 The other folder contains all the C code; but not the EDF (french electricity company) datasets, because they 
 are not public. Since the (de)serialization process in code/src/TimeSeries/ is tailored for these data, 
